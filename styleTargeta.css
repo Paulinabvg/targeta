@@ -1,0 +1,133 @@
+body{
+    background-image: url("Imagenes/fondoFlor.webp");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face{
+    font-family: 'plante';
+    src: url('plante/Plante.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#divCentral{
+    margin: 30px;
+    padding: 5px;
+    background-image: url("Imagenes/img5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'plante', Arial, sans-serif;
+    font-size: 80px;
+    width: 100%;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cards{
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 600px;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.cards:hover {
+    transform: scale(1.05); /* Escala la tarjeta al 105% de su tamaño original */
+}
+#imgCard{
+    text-align: left;
+    border-radius: 15px;
+}
+.img{
+    height: 100%;
+    width: 150px;
+    border-radius: 15px 0 0 15px;
+}
+.texto{
+    text-align: right;
+    padding: 25px;
+    text-align: justify;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+.carousel-control.prev {
+    left: 200px;
+}
+.carousel-control.next {
+    right: 200px;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-caption h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.carousel-caption p {
+    margin: 0;
+    font-size: 16px;
+}
+#imgFlor{
+    width: 50px;
+    height: auto;
+}
+#contenedor2{
+    display: flex;
+}
